@@ -5,17 +5,16 @@ Created on Wed Sep 20 21:43:06 2017
 @author: Don Gass
 """
 bit_list = []
+decimal_value = 0
 
 while True:
-    bit = input('Enter bit value (0 or 1) or "d" when done: ')
-    if bit == "d":
+    bit = input('Enter bit value (0 or 1) or anything else when done: ')
+    if not bit.isnumeric():
         break
-    elif bit.isdigit() == False:
-        print('You must enter a digit or "d" when done!')
+    elif int(bit) < 0 or int(bit) > 1:
+        print('You must enter only a 1 or 0!')
     else:
         bit_list.append(int(bit))
-
-decimal_value = 0
 
 for bit in bit_list:
     decimal_value = decimal_value * 2 + bit
