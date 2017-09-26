@@ -3,6 +3,7 @@
 Created on Tue Sep 19 21:35:56 2017
 
 @author: Don Gass
+Decided to try out a homebrew function :-)
 """
 
 def howmanybars(money):
@@ -17,7 +18,7 @@ def howmanybars(money):
     
     Returns
     -------
-    res : number
+    numbars : number
         The total number of chocolate bars that can be purchased/redeemed
     
     Example
@@ -35,4 +36,4 @@ def howmanybars(money):
 
 # main program start
 USRMONEY = int(input('How much money do you have to spend on chocolate bars? '))
-print('You have ' + str(howmanybars(USRMONEY)) + ' bars of chocolate!')
+print('You will have ' + str(howmanybars(USRMONEY)) + ' bars of chocolate!')

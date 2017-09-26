@@ -27,10 +27,10 @@ rate = int(input('Enter rate % (positive real number): '))
 #setup additional variables to be used in calculations
 annual_rate = rate / 100
 compound = 1
-time = annuitytime
+#time = annuitytime
 
 #lump sum calculation
-lumpfinalamount = lumpsum*((1 + annual_rate/compound)**(compound*time))
+lumpfinalamount = lumpsum*((1 + annual_rate/compound)**(compound*annuitytime))
 
 
 
@@ -46,7 +46,7 @@ while numpayments <= annuitytime:
     numpayments += 1
 
 #print results
-print('\n\n\nAfter', time, 'years at', rate,'% interest:\n')
+print('\n\n\nAfter', annuitytime, 'years at', rate,'% interest:\n')
 
 print('Lump sum of', lumpsum, 'will return: ', end='')
 print(locale.currency(lumpfinalamount, grouping=True),'\n')
