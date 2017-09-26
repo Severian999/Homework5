@@ -27,7 +27,6 @@ rate = int(input('Enter rate % (positive real number): '))
 #setup additional variables to be used in calculations
 annual_rate = rate / 100
 compound = 1
-#time = annuitytime
 
 #lump sum calculation
 lumpfinalamount = lumpsum*((1 + annual_rate/compound)**(compound*annuitytime))
